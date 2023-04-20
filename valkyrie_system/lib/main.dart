@@ -41,6 +41,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  UserRepository userRepository = UserRepository();
+  PlatformRepository platformRepository = PlatformRepository();
+
   void user() async {
     //var str = await userRepository.fetchBlockList();
     var result = await platformRepository.fetchPlatformList();
